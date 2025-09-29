@@ -167,17 +167,22 @@ tips.head()
 tips.time.unique()
 ```
 <img width="448" height="56" alt="image" src="https://github.com/user-attachments/assets/7e22d348-8ef4-4aac-bc21-9c302ddd226c" />
+
+
 ```py
 contingency_table=pd.crosstab(tips['sex'],tips['time'])
 print(contingency_table)
 ```
+
 <img width="228" height="95" alt="image" src="https://github.com/user-attachments/assets/70d1e944-7873-43a6-b44a-fe0dd7417fee" />
+
 
 ```py
 chi2,p,_,_=chi2_contingency(contingency_table)
 print(f"Chi-Square Statistics: {chi2}")
 print(f"P-Value: {p}")
 ```
+
 <img width="418" height="52" alt="image" src="https://github.com/user-attachments/assets/9b258b24-c3bb-49c4-ad30-ab3eed8252e5" />
 
 
